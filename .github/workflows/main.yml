@@ -3,7 +3,7 @@ name: Deploy to cPanel
 on:
   push:
     branches:
-      - v1
+      - mehedi
 
 jobs:
   ftp-deploy:
@@ -25,4 +25,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./out/
-          server-dir: /mehediisrak.me/
+          server-dir: /mehedi213.me/
