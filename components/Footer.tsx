@@ -12,7 +12,7 @@ export default function Footer() {
           </h2>
           <p className="text-gray-400">
             Whether it’s a groundbreaking project, a tech innovation, or just a
-            friendly chat about the future of software engineering, I’m all ears.
+            friendly chat about quality assurance and test automation, I’m all ears.
             Let’s connect and create something extraordinary!
           </p>
         </div>

@@ -1,12 +1,4 @@
 "use client";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MoveRight } from "lucide-react";
 import { motion } from 'framer-motion';
@@ -15,91 +7,50 @@ import { useInView } from 'react-intersection-observer';
 const jobPositions = [
   {
     timeline: "Jan 2025 — Present",
-    currentPosition: "Software Engineer",
-    place: "Webable Digital",
+    currentPosition: "Automation QA Engineer",
+    place: "Ether Technologies",
     previousPositions: [""],
     description:
-      "Leading product vision and strategy, focusing on user journey optimization and go-to-market execution. Achieved 20% increase in new user acquisition and 30% improvement in team productivity through Lean Product Development and Agile methods. Launched and managed enterprise SaaS products while maintaining high engineering quality.",
+      "Designed and executed comprehensive end-to-end testing strategies for web, mobile, IoT, and AI-powered applications, contributing to 99.9% system uptime and operational reliability. Validated AI-driven workflows (AI Agents, LLMs, RAG systems) with a focus on response accuracy, hallucination detection, contextual integrity, and consistency. Automated regression and functional test suites using Playwright and Appium, reducing manual testing effort by 40%.",
     skills: [
-      "Product Strategy",
-      "Go-to-Market Planning",
-      "User Journey Optimization",
-      "Revenue vs. Cost Analysis",
-      "Agile/Lean Methods",
-      "Cross-functional Leadership",
-      "Product Analytics",
-      "Technical Product Management",
-      "SaaS",
-      "MACH Architecture",
+      "Playwright",
+      "Appium",
+      "AI/LLM Testing",
+      "RAG Validation",
+      "E2E Testing",
+      "WebRTC",
+      "API Testing",
+      "Regression Automation",
+      "IoT Testing",
+      "Agile/Scrum",
     ],
     recentProjects: [
       {
-        title: "MAVE CMS (SaaS | API-First | MACH)",
+        title: "KTO (Kids Tracking & Observation System)",
         description:
-          "Spearheaded strategic and technical blueprint for an enterprise-grade headless CMS. Negotiated requirements with stakeholders and integrated microservices architecture, shortening deployment cycles by 30%.",
-        technologies: ["MACH Architecture", "GraphQL", "AWS"],
-      },
-      {
-        title: "MAVE LMS (AI-Driven Learning Management)",
-        description:
-          "Defined product roadmap emphasizing data-driven feature prioritization. Deployed analytics dashboards to track learner engagement, raising course completion by 40% and reducing dropout by 25%.",
-        technologies: ["AI/ML", "Analytics", "LMS"],
-      },
-      {
-        title: "Aranya (E-Commerce Platform)",
-        description:
-          "Led product discovery and user journey mapping. Collaborated with UI/UX to reduce friction points, improving site load times by 35% and increasing conversions by 20% through phased rollout approach.",
-        technologies: ["NextJS", "Redux", "UX Research"],
+          "Validated complex real-time communication architecture leveraging WebRTC for live screen monitoring, Pusher for event-driven synchronization, Firebase Cloud Messaging (FCM) for push notifications, and Google Geolocation services for GPS-based live tracking and geofencing. Ensured API reliability, data integrity, and seamless parent-child device synchronization under high concurrency.",
+        technologies: ["WebRTC", "Pusher", "FCM", "Playwright"],
       },
     ],
   },
-  // {
-  //   timeline: "Aug 2020 — Mar 2023",
-  //   currentPosition: "Jr Software Engineer",
-  //   place: "Navigator Technologies",
-  //   previousPositions: [""],
-  //   description:
-  //     "Oversaw AI-driven chatbot projects and digital transformation initiatives, unifying cross-departmental collaboration. Delivered $20K+ in annual cost savings through optimized containerized deployments and AWS best practices. Strengthened product vision by working with senior management on business strategies.",
-  //   skills: [
-  //     "Technical Project Management",
-  //     "AI Implementation",
-  //     "Digital Transformation",
-  //     "Cost Optimization",
-  //     "Stakeholder Management",
-  //     "Business Strategy",
-  //     "Cloud Architecture",
-  //     "Process Automation",
-  //   ],
-  //   recentProjects: [
-  //     {
-  //       title: "Gloria Jean's Coffees Bangladesh (E-Commerce)",
-  //       description:
-  //         "Drove implementation of server load balancing and process automation, boosting sales by 27%. Redesigned user flow to reduce checkout friction and accelerate client onboarding by 170%.",
-  //       technologies: ["Process Optimization", "UX Design", "Performance Tuning"],
-  //     },
-  //     {
-  //       title: "NAVBOT (AI CRM Chatbot)",
-  //       description:
-  //         "Conceptualized and rolled out an AI-powered CRM chatbot for restaurants and vehicle servicing. Automated reservation and service request workflows, significantly improving response times and user satisfaction.",
-  //       technologies: ["AI/ML", "CRM", "Workflow Automation"],
-  //     },
-  //   ],
-  // },
   {
-    timeline: "Jan 2013 — Dec 2024",
-    currentPosition: "Jr Software Engineer",
+    timeline: "Jan 2023 — Dec 2024",
+    currentPosition: "Jr QA Engineer",
     place: "Navigator Technologies",
     previousPositions: [""],
     description:
-      "Developed and productized 120+ web templates using React/NextJS, amassing 863,000+ global downloads and over 430,000 purchases. Leveraged Lottiefiles & GSAP to create interactive experiences, increasing template conversion rates by 27% and scaling user base by 170%.",
+      "Performed functional, integration, and system testing of fintech payment gateway integrations, including SSLCommerz, BRAC Bank payment systems, Nagad, and bKash, validating transaction flows across multiple payment channels and APIs. Tested CRM software modules covering visa processing, reservation management, digital marketing operations, sales workflows, and accounting functionalities.",
     skills: [
-      "Frontend Development",
-      "React/NextJS",
-      "UI/UX Design",
-      "Performance Optimization",
-      "Animation Development",
-      "Product Development",
-      "User Experience",
+      "Functional Testing",
+      "Integration Testing",
+      "Payment Gateway Testing",
+      "CRM Testing",
+      "RBAC Validation",
+      "Postman",
+      "JMeter",
+      "Jira",
+      "ClickUp",
+      "BDD",
     ],
   },
 ];
@@ -144,13 +95,21 @@ const ExpCards = () => {
 
               <p className="text-muted-foreground">{job.description}</p>
 
-              {job.previousPositions && job.previousPositions.length > 0 && (
-                <div className="space-y-2">
-                  <p className="font-medium">Previous Roles:</p>
-                  {job.previousPositions.map((position, idx) => (
-                    <p key={idx} className="text-sm text-muted-foreground">
-                      {position}
-                    </p>
+              {job.recentProjects && job.recentProjects.length > 0 && (
+                <div className="space-y-3">
+                  <p className="font-medium">Recent Projects:</p>
+                  {job.recentProjects.map((project, idx) => (
+                    <div key={idx} className="text-sm text-muted-foreground space-y-1">
+                      <p className="font-medium text-foreground">{project.title}</p>
+                      <p>{project.description}</p>
+                      <div className="flex flex-wrap gap-2 pt-1">
+                        {project.technologies.map((tech, techIdx) => (
+                          <Badge key={techIdx} variant="outline" className="text-xs">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
                   ))}
                 </div>
               )}
@@ -170,7 +129,7 @@ const ExpCards = () => {
       <div className="mt-12">
         <a
           className="inline-flex items-center font-medium leading-tight text-foreground group"
-          href="https://drive.google.com/file/d/1k9u8kSZBKRf637oK06XbSLjdqR8oc4bJ/view?usp=sharing"
+          href="https://mehedi213.tiiny.site/"
           target="_blank"
           rel="noopener noreferrer"
         >

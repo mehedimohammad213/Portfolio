@@ -11,28 +11,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://mehedi.me",
   },
-  title: "mehedi ",
+  title: "Mehedi Hasan — Software QA Engineer",
   description:
-    "mehedi  is a Front-End Software Engineer, founder, and Quality nerd.",
+    "Mehedi Hasan is a Software QA Engineer specializing in automation testing, AI/LLM validation, and end-to-end quality assurance for web, mobile, and IoT applications.",
   keywords:
-    "mehedi , Front-end Engineer, Project Leader, Web Development, Web3, Decentralized Applications, Quality Assurance, Software Engineering, Blockchain, Cryptography",
+    "Mehedi Hasan, Software QA Engineer, Quality Assurance, Automation Testing, Playwright, Appium, API Testing, CI/CD, Agile, BDD, TDD",
   openGraph: {
     locale: "en_US",
-    siteName: "mehedi ",
+    siteName: "Mehedi Hasan",
     type: "website",
-    title: "mehedi ",
+    title: "Mehedi Hasan — Software QA Engineer",
     description:
-      "mehedi  is a Front-End Software Engineer, founder, and Quality nerd.",
+      "Mehedi Hasan is a Software QA Engineer specializing in automation testing, AI/LLM validation, and end-to-end quality assurance for web, mobile, and IoT applications.",
     url: "https://mehedi.me",
     images: [
       {
-        url: "./og-large-meik.webp",
+        url: "/avatar.webp",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "mehedi ",
+    title: "Mehedi Hasan — Software QA Engineer",
   },
 };
 

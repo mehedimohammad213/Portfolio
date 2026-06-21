@@ -1,4 +1,71 @@
 {
+    "kto": {
+        "title": "KTO — Kids Tracking & Observation System",
+        "banner": "/kto-banner.png",
+        "overview": "End-to-end QA validation of a real-time kids tracking and observation platform with live screen monitoring, push notifications, and GPS-based geofencing.",
+        "challenge": "The system relied on multiple real-time services — WebRTC, Pusher, FCM, and Google Geolocation — operating concurrently under high load. Ensuring data integrity, API reliability, and seamless parent-child device synchronization across all channels was critical.",
+        "solution": "Our QA approach included:\n1. End-to-end test strategy across web and mobile\n2. Real-time communication validation (WebRTC, Pusher, FCM)\n3. API reliability and data integrity testing\n4. Concurrency and geofencing scenario coverage",
+        "impact": [
+            "99.9% system uptime maintained",
+            "Validated real-time sync under high concurrency",
+            "40% reduction in manual testing via automation",
+            "Comprehensive API and integration test coverage"
+        ],
+        "technicalDetails": {
+            "architecture": [
+                "WebRTC Live Monitoring",
+                "Event-Driven Sync (Pusher)",
+                "Push Notifications (FCM)",
+                "GPS Geofencing"
+            ],
+            "technologies": [
+                "Playwright",
+                "Appium",
+                "Postman",
+                "WebRTC",
+                "Pusher",
+                "Firebase Cloud Messaging"
+            ]
+        },
+        "processAndMethodology": [
+            "Test plan design for multi-service architecture",
+            "Automated regression suites with Playwright and Appium",
+            "API contract and integration testing",
+            "Concurrency and geofencing scenario validation"
+        ]
+    },
+    "playwright-practice": {
+        "title": "Playwright Practice with Docker and CI/CD",
+        "banner": "/techcare.webp",
+        "overview": "Open-source real-time testing scenario demonstrating Playwright automation integrated with Docker containers and GitHub Actions CI/CD pipelines.",
+        "challenge": "Setting up a reproducible test environment that runs consistently across local machines and CI pipelines, with parallel execution and minimal setup friction for contributors.",
+        "solution": "Built a containerized test framework featuring:\n1. Docker-based test environments\n2. GitHub Actions CI/CD integration\n3. Parallel Playwright test execution\n4. TypeScript test suites with TDD practices",
+        "impact": [
+            "Reproducible test environments via Docker",
+            "Automated regression on every push",
+            "Parallel execution for faster feedback",
+            "Open-source reference for QA engineers"
+        ],
+        "technicalDetails": {
+            "architecture": [
+                "Containerized Test Runner",
+                "CI/CD Pipeline Integration",
+                "Parallel Test Execution"
+            ],
+            "technologies": [
+                "Playwright",
+                "TypeScript",
+                "Docker",
+                "GitHub Actions"
+            ]
+        },
+        "processAndMethodology": [
+            "TDD and BDD test design",
+            "Docker image optimization",
+            "CI pipeline configuration",
+            "Documentation for contributors"
+        ]
+    },
     "mave-cms": {
         "title": "MAVE CMS - Enterprise SaaS Platform",
         "banner": "/mave-cms.webp",

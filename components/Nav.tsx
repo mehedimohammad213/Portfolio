@@ -16,7 +16,6 @@ export default function Nav() {
     "experience",
     "projects",
     "contact",
-    "Product Hunt",
   ]);
 
   const navItems: NavItem[] = [
@@ -24,7 +23,6 @@ export default function Nav() {
     { name: "Experience", href: "/#experience" },
     { name: "Projects", href: "/#projects" },
     { name: "Contact", href: "/#contact" },
-    { name: "Product Hunt", href: "/producthunter" },
   ];
 
   const getNavItemClasses = (href: string) => {
@@ -51,7 +49,7 @@ export default function Nav() {
           <Avatar className="w-24 lg:w-36 h-auto border-2 border-primary bg-secondary">
             <AvatarImage src="./avatar.webp" />
             <AvatarFallback className="w-24 h-24 lg:w-36 lg:h-36 rounded-full border-1 border-primary">
-              AM
+              MH
             </AvatarFallback>
           </Avatar>
         </div>
@@ -59,20 +57,20 @@ export default function Nav() {
           Hi, I&#39;m Mehedi Hasan 👋
         </h1>
         <h2 className="text-xl lg:text-start text-primary font-semibold">
-          Software Engineer, Webable Digital 🚀
+          Software QA Engineer, Ether Technologies 🚀
         </h2>
         <div className="space-y-4 text-muted-foreground">
           <p className="text-base lg:text-lg leading-relaxed">
-            Software Engineer with 3 years of experience in tech, specializing in building innovative digital solutions that drive business growth.
+            Software QA Engineer with 4 years of experience and a passion for continuous learning. Highly motivated and a quick learner, with a strong interest in working with cutting-edge technologies.
           </p>
           <ul className="space-y-2 text-sm lg:text-base">
             <li className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-primary rounded-full" />
-              <span>Led development of MACH-based enterprise platforms</span>
+              <span>Validated AI-driven workflows including LLMs and RAG systems</span>
             </li>
             <li className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-primary rounded-full" />
-              <span>Achieved 160% revenue growth through AI implementation</span>
+              <span>Reduced manual testing effort by 40% with Playwright & Appium</span>
             </li>
           </ul>
         </div>
@@ -97,7 +95,7 @@ export default function Nav() {
       <ul className="flex flex-row gap-6 mt-6 lg:mt-0 px-4 lg:px-0">
         <Button variant="outline" size="icon">
           <a
-            href="https://github.com/mehedi"
+            href="https://github.com/mehedimohammad213"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -106,7 +104,7 @@ export default function Nav() {
         </Button>
         <Button variant="outline" size="icon">
           <a
-            href="https://linkedin.com/in/mehedi-?ref=mehedi.me"
+            href="https://www.linkedin.com/in/mehedi-hasan-14b984241/"
             target="_blank"
             rel="noopener noreferrer"
           >
